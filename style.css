@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  font-family: "Rajdhani", sans-serif;
+}
+
+div {
+  border-radius: 8px;
+}
+.container {
+  width: 400px;
+  height: 600px;
+  padding: 30px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.screen {
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  background-color: lightgray;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.screen-text {
+  max-width: 100%;
+  word-wrap: break-word;
+  text-align: right;
+}
+.buttons {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 12px;
+}
+.btn {
+  background-color: seashell;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.05s ease-in-out;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+
+.svg {
+  height: 26px;
+  width: 26px;
+}

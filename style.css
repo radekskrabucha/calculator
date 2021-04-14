@@ -1,3 +1,10 @@
+:root {
+  --dim-grey: #696f74ff;
+  --gray-web: #777f81ff;
+  --davys-grey: #585760ff;
+  --light-grey: #7b7d86ff;
+  --dark-grey: #46474dff;
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +27,7 @@ div {
   width: 400px;
   height: 600px;
   padding: 30px;
-  background-color: gray;
+  background-color: var(--dark-grey);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,7 +38,7 @@ div {
   width: 100%;
   min-height: 100px;
   height: auto;
-  background-color: lightgray;
+  background-color: var(--light-grey);
   padding: 10px;
   margin-bottom: 40px;
   font-size: 24px;
@@ -53,7 +60,7 @@ div {
   gap: 12px;
 }
 .btn {
-  background-color: seashell;
+  background-color: var(--light-grey);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +76,15 @@ div {
 .btn:active {
   transform: scale(0.95);
 }
-
+.operator,
+.percent,
+.coma,
+.operate,
+.reciprocal,
+.delete,
+.backspace {
+  background-color: var(--gray-web);
+}
 .svg {
   height: 26px;
   width: 26px;
